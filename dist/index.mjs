@@ -481,7 +481,7 @@ function createSendBtcPsbt(address2, paymentAddress, recipientAddress, amount, p
     if (amountGathered > satsNeeded) {
       psbt.addOutput({
         address: paymentAddress,
-        value: amountGathered - satsNeeded - amount
+        value: amountGathered - satsNeeded
       });
     }
     return {
